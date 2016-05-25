@@ -1,0 +1,28 @@
+{
+  "name": "xduck",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/xduck.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "start": "npm run build",
+    "clean": "rimraf lib",
+    "build:lib": "babel src --out-dir lib",
+    "build": "npm run build:lib",
+    "lint": "eslint . && echo 'ESLint Passed!\\n'",
+    "prepublish": "npm run clean && npm run build",
+    "test": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xcatliu/xduck.git"
+  },
+  "author": "xcatliu <xcatliu@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xcatliu/xduck/issues"
+  },
+  "homepage": "https://github.com/xcatliu/xduck#readme"
+}
