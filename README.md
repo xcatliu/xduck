@@ -6,7 +6,7 @@
 
 ## What is Xduck
 
-[Xduck] is a JavaScript library that works prefect with [Redux].
+[Xduck] is a JavaScript library that works perfectly well with [Redux].
 
 ## Motivation
 
