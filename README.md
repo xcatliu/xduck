@@ -2,11 +2,11 @@
 
 > If you love the awesome [Redux] you will love [Xduck]!
 
-***WARNING: This project is currently under development, do not use it in the production environment***
+***WARNING: This project is currently under development, DONOT use it in the production environment***
 
 ## What is Xduck
 
-[Xduck] is a JavaScript library that works well with [Redux].
+[Xduck] is a JavaScript library that works prefect with [Redux].
 
 ## Motivation
 
