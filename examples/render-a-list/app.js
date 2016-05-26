@@ -6,7 +6,7 @@ import Xduck from '../../';
 const initialState = {
   todos: [
     { text: 'Learn Redux' },
-    { text: 'Learn XDuck' },
+    { text: 'Learn Xduck' },
     { text: 'Build Something Awesome' },
   ],
 };

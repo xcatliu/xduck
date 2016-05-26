@@ -57,7 +57,7 @@
 	/* eslint no-new:0 */
 	
 	var initialState = {
-	  todos: [{ text: 'Learn Redux' }, { text: 'Learn XDuck' }, { text: 'Build Something Awesome' }]
+	  todos: [{ text: 'Learn Redux' }, { text: 'Learn Xduck' }, { text: 'Build Something Awesome' }]
 	};
 	
 	function reducer() {

@@ -12,7 +12,7 @@
 
 As we know, [Redux] is a predictable state container for JavaScript apps, it evolved from [Flux], which came from [React]. So we always use Redux together with React.
 
-React is awesome, Redux is amazing. However, if we want to use them together, we need to do more works like `connect`, `Provider`, `mapStateToProps`, `mapDispatchToProps`, etc. Additional, it's redundant to have `state` concepts in both React and Redux.
+React is awesome, Redux is amazing. However, if we want to use them together, we need to do more works like `connect`, `Provider`, `mapStateToProps`, `mapDispatchToProps`, etc. Additional, it's redundant to have `state` concept in both React and Redux.
 
 Can we go even further to create a framework 100% suitable for Redux?
 
@@ -106,7 +106,7 @@ import Xduck from 'Xduck';
 const initialState = {
   todos: [
     { text: 'Learn Redux' },
-    { text: 'Learn XDuck' },
+    { text: 'Learn Xduck' },
     { text: 'Build Something Awesome' },
   ],
 };
