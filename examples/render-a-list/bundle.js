@@ -57,7 +57,7 @@
 	/* eslint no-new:0 */
 	
 	var initialState = {
-	  message: 'Hello Xduck!'
+	  todos: [{ text: 'Learn Redux' }, { text: 'Learn XDuck' }, { text: 'Build Something Awesome' }]
 	};
 	
 	function reducer() {

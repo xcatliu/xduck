@@ -5,7 +5,11 @@
   </head>
   <body>
     <div id="app">
-      <p>{{state.message}}</p>
+      <ul>
+        {{#state.todos}}
+        <li>{{text}}</li>
+        {{/state.todos}}
+      </ul>
     </div>
     <script src="./bundle.js"></script>
   </body>

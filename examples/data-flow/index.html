@@ -6,6 +6,13 @@
   <body>
     <div id="app">
       <p>{{state.message}}</p>
+      <input
+        type="text"
+        oninput="Xduck.action"
+        action.type="UPDATE"
+        action.message="{{this.value}}"
+        value="{{state.message}}"
+      ></input>
     </div>
     <script src="./bundle.js"></script>
   </body>

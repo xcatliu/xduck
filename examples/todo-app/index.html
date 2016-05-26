@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div id="app">
+      <input
+        type="text"
+        oninput="{{Xduck.action}}"
+        action.type="UPDATE"
+        action.message="{{this.value}}"
+        value="{{state.message}}"
+      ></input>
+      <button
+        type="button"
+        onclick="{{Xduck.action}}"
+        action.type="ADD_TODO"
+      >+</button>
+      <ul>
+        {{#state.todos}}
+        <li>
+          <span>{{text}}</span>
+          <button
+            type="button"
+            onclick="{{Xduck.action}}"
+            action.type="REMOVE_TODO"
+            action.index="{{@index}}"
+          >X</button>
+        </li>
+        {{/state.todos}}
+      </ul>
+    </div>
+    <script src="./bundle.js"></script>
+  </body>
+</html>

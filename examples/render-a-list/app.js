@@ -1,10 +1,14 @@
 /* eslint no-new:0 */
 
 import { createStore } from 'redux';
-import Xduck from '../..';
+import Xduck from '../../';
 
 const initialState = {
-  message: 'Hello Xduck!',
+  todos: [
+    { text: 'Learn Redux' },
+    { text: 'Learn XDuck' },
+    { text: 'Build Something Awesome' },
+  ],
 };
 
 function reducer(state = initialState, action) {

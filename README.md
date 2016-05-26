@@ -31,7 +31,7 @@ import { createStore } from 'redux';
 import Xduck from 'xduck';
 
 const initialState = {
-  message: 'Hello Xduck.js!',
+  message: 'Hello Xduck!',
 };
 
 function reducer(state = initialState, action) {
@@ -105,8 +105,8 @@ import Xduck from 'Xduck';
 
 const initialState = {
   todos: [
-    { text: 'Learn JavaScript' },
-    { text: 'Learn Vue.js' },
+    { text: 'Learn Redux' },
+    { text: 'Learn XDuck' },
     { text: 'Build Something Awesome' },
   ],
 };
@@ -174,14 +174,16 @@ function reducer(state = initialState, action) {
       return Object.assign({}, state, {
         message: action.message,
       });
-    case 'ADD_TODO':
+    case 'ADD_TODO': {
       const todos = state.todos.slice();
       todos.push({ text: state.message });
       return Object.assign({}, state, { todos });
-    case 'REMOVE_TODO':
+    }
+    case 'REMOVE_TODO': {
       const todos = state.todos.slice();
       todos.splice(action.index, 1);
       return Object.assign({}, state, { todos });
+    }
     default:
       return state;
   }

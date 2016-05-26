@@ -57,7 +57,7 @@
 	/* eslint no-new:0 */
 	
 	var initialState = {
-	  message: 'Hello Xduck!'
+	  message: 'Hello Xduck'
 	};
 	
 	function reducer() {
@@ -65,6 +65,10 @@
 	  var action = arguments[1];
 	
 	  switch (action.type) {
+	    case 'UPDATE':
+	      return Object.assign({}, state, {
+	        message: action.message
+	      });
 	    default:
 	      return state;
 	  }

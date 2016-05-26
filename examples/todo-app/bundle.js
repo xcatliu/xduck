@@ -57,7 +57,7 @@
 	/* eslint no-new:0 */
 	
 	var initialState = {
-	  message: 'Hello Xduck!'
+	  todos: [{ text: 'Learn Redux' }, { text: 'Learn Xduck' }, { text: 'Build Something Awesome' }]
 	};
 	
 	function reducer() {
@@ -65,6 +65,22 @@
 	  var action = arguments[1];
 	
 	  switch (action.type) {
+	    case 'UPDATE':
+	      return Object.assign({}, state, {
+	        message: action.message
+	      });
+	    case 'ADD_TODO':
+	      {
+	        var todos = state.todos.slice();
+	        todos.push({ text: state.message });
+	        return Object.assign({}, state, { todos: todos });
+	      }
+	    case 'REMOVE_TODO':
+	      {
+	        var _todos = state.todos.slice();
+	        _todos.splice(action.index, 1);
+	        return Object.assign({}, state, { todos: _todos });
+	      }
 	    default:
 	      return state;
 	  }
