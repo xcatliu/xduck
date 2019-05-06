@@ -1,5 +1,8 @@
 # Xduck
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/xcatliu/xduck.svg)](https://greenkeeper.io/)
+
+
 > If you love the awesome [Redux] you will love [Xduck]!
 
 ***WARNING: This project is currently under development, DONOT use it in the production environment***
