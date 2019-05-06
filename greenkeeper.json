@@ -1,0 +1,14 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "examples/data-flow/package.json",
+        "examples/hello-world/package.json",
+        "examples/playground/package.json",
+        "examples/render-a-list/package.json",
+        "examples/todo-app/package.json",
+        "package.json"
+      ]
+    }
+  }
+}
